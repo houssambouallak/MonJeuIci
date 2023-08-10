@@ -214,9 +214,9 @@ function movePlayer(direction) {
 function endGame(isWin) {
     if (isWin) {
         // Redirect to gagne.html when the player wins
-        window.location.href = "../Gagne.html";
+        window.location.href = "Gagne.html";
     } else {
-      window.location.href = "../perdu.html";
+      window.location.href = "perdu.html";
     }
 }
 
