@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roguelike Dungeon</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body class="background">
+    
+    <div class="game-container">
+        <div class="game-grid-container">
+            <table id="game-grid"></table>
+        </div>
+
+        <div class="controls-and-buttons">
+            <!-- Les Boutons Directionnels -->
+            <div class="direction-buttons">
+                <div class="direction-button-container">
+                    <button id="up-button">Up</button>
+                    <div class="leftright-buttons">
+                        <button id="left-button">Left</button>
+                        <button id="right-button">Right</button>
+                    </div>
+                    <button id="down-button">Down</button>
+                </div>
+            </div>
+    
+            <!-- Score et Bouton Play  -->
+            <div class="game-controls">
+                <button id="restart-button">Play Game</button>
+                <div class="score-container">
+                    <div class="score-frame">
+                        Score: <span id="score">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Les Audios -->
+    <audio id="backgroundAudio" loop> <source src="./MUSIC/Background_audio.mp3" type="audio/mpeg"></audio>
+    <audio id="jumpAudio"><source src="./MUSIC/jump.mp3" type="audio/mpeg"></audio>
+    <audio id="tresorAudio"><source src="./MUSIC/tresor.wav" type="audio/wav"></audio>
+    <audio id="winnerAudio"><source src="./MUSIC/winner.mp3" type="audio/mpeg"></audio>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>

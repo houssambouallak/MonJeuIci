@@ -1,0 +1,176 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Conteneur du jeu */
+.game-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Tableau du jeu */
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100vmin;
+    height: 60vmin;
+    background-color: #fff;
+    border: 10px solid;
+    border-radius: 20px;
+}
+
+td {
+    height: 10px;
+    width: 10px;
+    flex: 1;
+    width: 100%;
+    aspect-ratio: 1; /* Crée des cellules carrées */
+    border: 1px solid white;
+}
+
+/* Styles des contrôles du jeu */
+.game-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    /* border: 10px solid #ffffff; */
+    background-image: url('../img/.png');
+    background-size: cover;
+    border-radius: 20px;
+}
+
+#restart-button {
+    border: #ffffff 5px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Ajoute une animation de transformation */
+}
+
+#restart-button:hover {
+    transform: scale(1.05);
+    box-shadow: #ffffff 0 5px 10px;
+}
+
+/* Conteneur du score */
+.score-container {
+    margin-top: 10px;
+    font-size: 50px;
+    font-family: monospace;
+}
+
+/* Cadre du score */
+.score-frame {
+    background-color: #ee5f00;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    box-shadow: #000 0 4px 20px;
+}
+
+/* Style de la grille de jeu */
+#game-grid {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.background {
+    background-image: url('../IMG/background.gif');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+/* Style de la grille de jeu */
+#game-grid {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+/* Stylisation des cases de jeu en fonction du type d'élément */
+#game-grid td[type-element="player"] {
+    background-image: url(../IMG/player.png);
+    background-size: 100% 100%;
+}
+
+#game-grid td[type-element="monster"] {
+    background-image: url(../IMG/monstre.png);
+    background-size: 100% 100%;
+}
+
+#game-grid td[type-element="treasure"] {
+    background-image: url(../IMG/tresor.png);
+    background-size: 100% 100%;
+}
+
+#game-grid td[type-element="wall"] {
+    background-image: url(../IMG/mur.png);
+    background-size: 100% 100%;
+}
+
+/* Style des boutons directionnels */
+.direction-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.direction-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.direction-button-container button {
+    border: none;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 18px;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+}
+
+.direction-button-container button:hover {
+    background-color: #ee5f00;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.leftright-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#up-button {
+    margin-bottom: 10px;
+}
+
+#down-button {
+    margin-top: 10px;
+}

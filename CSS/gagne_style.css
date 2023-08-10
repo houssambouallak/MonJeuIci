@@ -1,0 +1,76 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/winner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: monospace;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 48px;
+    color: #009688;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: black;
+    font-size: 24px; /* Nouvelle taille de police */
+    font-weight: bold; /* Texte en gras */
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 10vmin;
+    width: 30vmin;
+    transition: background-color 0.3s;
+}
+
+
+.btn:hover {
+    background-color: #ff7b00;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.808);
+
+}
+
+.sticky_style {
+    color: white;
+    font-style: oblique;
+    background-color: #ff9100;
+    padding: 10px;
+    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stickyup {
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+}
+
+.stickyDown {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
